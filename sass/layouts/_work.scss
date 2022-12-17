@@ -1,0 +1,98 @@
+/* Work */
+.work-list {
+    // display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    @media screen and (min-width: 480px) {
+     display: flex;
+     flex-wrap: wrap;
+    //  margin-top: -30px;
+    //  margin-bottom: -30px;
+    }
+}
+
+.work-list__title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.work-list__text {
+    color: var(--title-text-collor);
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.work-list__item {
+    background-color: var(--primary-white-color);
+    // flex-basis: calc((100% - 90px) / 4);
+    // @media screen and (min-width: 768px) {
+    //         flex-basis: calc((100% - 60px) / 2);
+    //     }
+    // @media screen and (min-width: 1200px) {
+    //         flex-basis: calc((100% - 90px) / 4);
+    //     }
+
+
+    // &:not(:last-child) {
+    //     @media screen and (max-width: 767px) {
+    //             margin-bottom: 30px;
+    //         }
+    //     }
+         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+         0px 1px 1px rgba(0, 0, 0, 0.14),
+         0px 2px 1px rgba(0, 0, 0, 0.2);
+         border-radius: 0px 0px 4px 4px;
+         background-color: var(--primary-white-colorolor);
+         @media screen and (max-width: 479px) {
+             width: 270px;
+         }
+         @media screen and (min-width: 480px) {
+             width: 450px;
+         }
+         @media screen and (min-width: 768px) {
+             width: 354px;
+         }
+        @media screen and (min-width: 1200px) {
+                width: 270px;
+        }
+}
+
+
+.team__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}
+
+.team {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-left: 1px solid var(--border-works-color);
+    border-right: 1px solid var(--border-works-color);
+    border-bottom: 1px solid var(--border-works-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.benefits__title {
+    margin-bottom: 10px;
+}
